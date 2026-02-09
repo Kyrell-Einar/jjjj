@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuja dos Meteoros</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-wrapper">
+      <h1>🚀 Fuja dos Meteoros</h1>
+      <p class="subtitle">
+        Use <strong>←</strong> e <strong>→</strong> para mover a nave e sobreviver o máximo
+        possível.
+      </p>
+
+      <section class="hud" aria-label="Painel de pontuação">
+        <div>Pontos: <span id="score">0</span></div>
+        <div>Recorde: <span id="best">0</span></div>
+      </section>
+
+      <canvas id="game" width="420" height="600" aria-label="Área do jogo"></canvas>
+
+      <button id="restart" hidden>Jogar novamente</button>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
